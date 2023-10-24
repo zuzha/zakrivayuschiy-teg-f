@@ -16,6 +16,7 @@
 
 .page {
   min-inline-size: 320px;
+  max-width: 1440px;
   min-block-size: 100dvb;
   font-family: var(--main-font), Arial, sans-serif;
   font-variation-settings: 'wght' var(--main-font-weight-text, 400);
@@ -41,9 +42,7 @@
 }
 
 .header__logo {
-  margin-block-end: 20px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  text-decoration: none;
 }
 
 .header__title {
@@ -60,9 +59,10 @@
 }
 
 .theme-menu__list {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
-  padding-inline-start: 20px;
+  align-items: flex-start;
 }
 
 .button {
@@ -188,7 +188,7 @@
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
   font-weight: 400;
-  color: var(--accent-color);
+  color: #000;
   text-shadow: 0 0 3px var(--bg-color);
   opacity: 0.5;
   mix-blend-mode: hard-light;
@@ -280,7 +280,7 @@
 }
 
 .button_decoration {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   position: relative;
   transition: box-shadow 0.3s ease;
@@ -313,7 +313,7 @@
 
 .dialog {
   inline-size: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   color: var(--accent-color);
   font-style: normal;
@@ -355,7 +355,7 @@
   background: #000;
 }
 
-@media (width <= 375px) {
+@media (max-width: 375px) {
 
   .page {
     --margin-side: 0;

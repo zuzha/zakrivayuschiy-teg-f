@@ -14,7 +14,7 @@
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
     <link rel="mask-icon" href="./svg/favicon.svg" />
     <link rel="apple-touch-icon" href="./images/favicon.png" />
-    <meta name="color-scheme" content="dark light" />
+    <meta name="color-scheme" content="light dark" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -26,7 +26,7 @@
   </head>
   <body class="page">
     <header class="header">
-      <p class="header__logo">&lt;/HTML&gt;</p>
+      <a class="header__logo">&lt;/HTML&gt;</a>
       <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -604,11 +604,10 @@
           </svg>
           <p class="dialog__title">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <form class="dialog__form" method="dialog">
+        <form class="dialog__form" method="dialog"> <!--В диалоге есть форма и указан атрибут, тип submit указан явно, поэтому закрываем по событию submit-->
           <button
             class="button dialog__button button_decoration"
             type="submit"
-            onclick="window['dialog'].close()"
           >
             <span class="button__text">ок</span>
           </button>
