@@ -26,7 +26,8 @@
   background-image: var(--bg-image);
   background-size: cover;
   background-attachment: fixed;
-  margin: 99px var(--margin-side);
+  margin: 0 auto;
+  inline-size: var(--card-inline-size, min(100%, 700px));
 }
 
 .header {
@@ -188,7 +189,7 @@
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
   font-weight: 400;
-  color: #000;
+  color: var(--accent-color),#000;
   text-shadow: 0 0 3px var(--bg-color);
   opacity: 0.5;
   mix-blend-mode: hard-light;
