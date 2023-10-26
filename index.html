@@ -25,7 +25,7 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header container">
       <a class="header__logo">&lt;/HTML&gt;</a>
       <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
@@ -62,7 +62,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <section class="content">
         <ul class="content__cards-list">
           <li class="content__list-item">
@@ -586,7 +586,7 @@
           </li>
         </ul>
         <button
-          class="button content__save-button button_decoration"
+          class="button content__save-button button_decoration container"
           type="button"
           onclick="window['dialog'].showModal()"
           aria-controls="dialog"

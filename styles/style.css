@@ -26,31 +26,39 @@
   background-image: var(--bg-image);
   background-size: cover;
   background-attachment: fixed;
-  margin: 0 auto;
-  inline-size: var(--card-inline-size, min(100%, 700px));
+  margin: 99px var(--margin-side); 
 }
-
+ 
+.container {
+  width: clamp(23.438rem, 16.3739rem + 30.1401vw, 43.5rem);
+  margin: 0 auto;
+}
+ 
 .header {
-  display: grid;
-  place-content: center;
-  gap: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: var(--accent-font), fantasy;
   background-color: var(--bg-color);
-  inline-size: 100%;
-  margin-block-end: 99px;
-  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0 25px;
+  margin-bottom: 6.25rem;
+  padding-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+  padding-bottom: 1.563rem;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
   border: 2px solid currentColor;
 }
-
+ 
 .header__logo {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
 }
-
+ 
 .header__title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  margin-bottom: 1.563rem;
   text-transform: uppercase;
-  text-align: center;
-  margin-block-end: 3px;
+}
 }
 
 .header__theme-menu {
@@ -62,8 +70,11 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  align-items: flex-start;
+  gap: 0.875rem;
+  font-family: var(--font-fm-accent);
+  font-size: 0.875rem;
+  line-height: 1;
+  padding-left: 16px;
 }
 
 .button {
@@ -189,7 +200,7 @@
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
   font-weight: 400;
-  color: var(--accent-color),#000;
+  color: var(--accent-color);
   text-shadow: 0 0 3px var(--bg-color);
   opacity: 0.5;
   mix-blend-mode: hard-light;
