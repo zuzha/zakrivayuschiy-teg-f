@@ -200,7 +200,6 @@
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
   font-weight: 400;
-  color: var(--accent-color);
   text-shadow: 0 0 3px var(--bg-color);
   opacity: 0.5;
   mix-blend-mode: hard-light;
